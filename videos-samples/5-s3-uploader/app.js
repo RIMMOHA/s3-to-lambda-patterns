@@ -21,7 +21,7 @@ const AWS = require('aws-sdk')
 AWS.config.update({ region: process.env.REGION })
 const s3 = new AWS.S3();
 
-const uploadBucket = '<< ENTER YOUR BUCKET NAME HERE >>'   // << LOOK!
+const uploadBucket = '<< myimagebucket1 >>'   // << LOOK!
 
 exports.handler = async (event) => {
   const result = await getUploadURL()
